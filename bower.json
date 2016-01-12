@@ -1,0 +1,28 @@
+{
+  "name": "bones-bootstrap-3.x",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Gosamt <sage393@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "wordpress",
+    "javascript",
+    "sass"
+  ],
+  "homepage": "https://github.com/sage393/bones-bootstrap-3x",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.6"
+  }
+}
