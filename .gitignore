@@ -56,3 +56,8 @@ temp/
 
 *.codekit
 *.scssc
+
+############
+### Bower
+############
+bower_components/
