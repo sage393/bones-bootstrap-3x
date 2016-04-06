@@ -29,6 +29,9 @@
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 
+		<!-- Enabling Live Reload in Your HTML -->
+		<script src="//localhost:35729/livereload.js"></script>
+
 	</body>
 
 </html> <!-- end of site. what a ride! -->
