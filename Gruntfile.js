@@ -21,10 +21,30 @@ module.exports = function(grunt) {
                 }
             }
         },
+        concat: {
+            scripts: {
+                src: [
+                        'library/js/parts/start.js',
+                        /* contenido extra */
+                        'library/js/parts/owl.js',
+                        /* google maps debe ser el último en cargar */
+                        'library/js/parts/gmaps.js',
+                        'library/js/parts/end.js'
+                    ],
+                dest: 'library/js/scripts.js'
+            }
+        },
         watch: {
             styles: {
                 files: ['library/scss/style.scss', 'library/scss/*/*.scss'],
                 tasks: ['sass:dev'],
+                options: {
+                    livereload: true
+                },
+            },
+            scripts: {
+                files: 'library/js/parts/*.js',
+                tasks: ['concat'],
                 options: {
                     livereload: true
                 },
