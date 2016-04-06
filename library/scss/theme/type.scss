@@ -1,0 +1,22 @@
+/* body default style
+------------------------------------------------------------------------------*/
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+
+    /**
+    * La propiedad hyphens, incluida en el documento CSS Text Level 3, ayuda a introducir cortes dentro de la
+    * palabra para forzar que una parte aparezca en una línea y la sobrante en la siguiente. Añade un guión medio (-) para indicarlo.
+    */
+    * {
+        -moz-hyphens: none;
+        -webkit-hyphens: none;
+        -o-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+    }
+}
+
+/* remove outline
+------------------------------------------------------------------------------*/
+a:hover, a:active, a:focus, input, input:active, input:hover { outline: none !important; }
