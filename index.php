@@ -27,7 +27,7 @@
 										</header>
 
 										<section class="entry-content cf">
-											<?php the_content(); ?>
+											<?php the_excerpt(__('(more…)')); ?>
 										</section>
 
 										<footer class="article-footer cf">
