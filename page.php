@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-			<div id="content">
+			<div id="content" class="container">
 
 				<div id="inner-content" class="wrap cf">
 
@@ -58,7 +58,7 @@
 
 						</main>
 
-						<?php get_sidebar(); ?>
+						<?php //get_sidebar(); ?>
 
 				</div>
 
