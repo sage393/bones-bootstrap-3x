@@ -1,3 +1,4 @@
+	<div class="container">
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
