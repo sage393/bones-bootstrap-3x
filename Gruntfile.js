@@ -26,9 +26,9 @@ module.exports = function(grunt) {
                 src: [
                         'library/js/parts/start.js',
                         /* contenido extra */
-                        'library/js/parts/owl.js',
+                        // 'library/js/parts/owl.js',
                         /* google maps debe ser el último en cargar */
-                        'library/js/parts/gmaps.js',
+                        // 'library/js/parts/gmaps.js',
                         'library/js/parts/end.js'
                     ],
                 dest: 'library/js/scripts.js'
