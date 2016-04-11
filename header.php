@@ -37,6 +37,9 @@
 		<?php // end of wordpress head ?>
 
 		<?php // drop Google Analytics Here ?>
+		<script type="text/javascript">
+			<?php echo $theme_redux['google-analytics']; ?>
+		</script>
 		<?php // end analytics ?>
 
 	</head>
