@@ -25,9 +25,9 @@ module.exports = function(grunt) {
             scripts: {
                 src: [
                         'library/js/parts/start.js',
-                        /* contenido extra */
+                        // 'library/js/parts/scrolltotop.js',
+                        // 'library/js/parts/anchors.js',
                         // 'library/js/parts/owl.js',
-                        /* google maps debe ser el último en cargar */
                         // 'library/js/parts/gmaps.js',
                         'library/js/parts/end.js'
                     ],
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
                 },
             },
             php: {
-                files: ['*.php', '*/*.php'],
+                files: ['*.php', '*/*.php', '*/*/*.php', '*/*/*/*.php'],
                 options: {
                     livereload: true
                 },
