@@ -1,3 +1,4 @@
+<?php global $theme_redux ?>
 <!doctype html>
 
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
@@ -49,7 +50,12 @@
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
+						<a href="<?php echo home_url(); ?>" rel="nofollow">
+							<?php //bloginfo('name'); ?>
+							<img src="<?php echo $theme_redux['company-logo']['url']; ?>" alt="Logo" class="img-responsive" />
+						</a>
+					</p>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
