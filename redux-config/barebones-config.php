@@ -293,6 +293,35 @@
              ),
          )
      ) );
+
+    //  -> Track Code
+    Redux::setSection( $opt_name, array(
+        'title'  => __( 'Track code', 'redux-framework-demo' ),
+        'id'     => 'track-code',
+        'desc'   => __( '', 'redux-framework-demo' ),
+        'subsection' => false,
+        'icon'   => 'el el-search'
+    ) );
+
+    Redux::setSection( $opt_name, array(
+        'title'      => __( 'Google Analytics', 'redux-framework-demo' ),
+        'desc'       => __( '', 'redux-framework-demo' ),
+        'id'         => 'track-codes-subsection',
+        'subsection' => true,
+        'icon'       => 'fa fa-google',
+        'fields'     => array(
+            array(
+                'id'       => 'google-analytics',
+                'type'     => 'textarea',
+                'title'    => __( 'Put the google analytics track code here', 'redux-framework-demo' ),
+                'subtitle' => __( 'JavaScript Allowed', 'redux-framework-demo' ),
+                'desc'     => __( '', 'redux-framework-demo' ),
+                'validate' => 'js', //see http://codex.wordpress.org/Function_Reference/wp_kses_post
+                'default'  => 'JavaScript is allowed in here.'
+            ),
+        )
+    ) );
+
     /*
      * <--- END SECTIONS
      */
